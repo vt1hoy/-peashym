@@ -115,6 +115,30 @@ img {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .site-nav__link {
+    white-space: nowrap;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* --- Основная колонка --- */
 .site-main {
   max-width: var(--max-width-wide);
