@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Обо мне — Пешков Михаил Дмитриевич"
+  description="Репетитор по математике и физике: опыт, образование МИРЭА, пробное занятие, форматы работы с учениками."
+>
+  <div class="about-page">
+    <!-- СЕКЦИЯ 1: знакомство -->
+    <section class="about-card about-intro" aria-labelledby="about-intro-heading">
+      <figure class="about-intro__photo">
+        <img
+          src="/images/tutor.jpg"
+          width="400"
+          height="480"
+          alt="Пешков Михаил Дмитриевич, репетитор по математике и физике"
+        />
+      </figure>
+      <div class="about-intro__body">
+        <span class="about-badge">5+ лет опыта преподавания</span>
+        <h1 class="about-intro__name" id="about-intro-heading">Пешков Михаил Дмитриевич</h1>
+        <p class="about-intro__text">
+          Преподаю математику и физику школьникам: помогаю разобраться в теме без стресса и
+          выстроить понятный путь к ОГЭ и ЕГЭ. (5)
+        </p>
+        <p class="about-intro__text">
+          янг крейзитризи  (6)
+        </p>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 2: пробное -->
+    <section class="about-card" aria-labelledby="about-trial-title">
+      <h2 class="about-section__title" id="about-trial-title">Пробное занятие</h2>
+      <ul class="about-list">
+        <li>разбор темы — (7)»;</li>
+        <li>выявление пробелов — (8);</li>
+        <li>план обучения — (9).</li>
+      </ul>
+    </section>
+
+    <!-- СЕКЦИЯ 3: опыт и образование -->
+    <section class="about-card" aria-labelledby="about-credentials-title">
+      <h2 class="about-section__title" id="about-credentials-title">Обо мне</h2>
+      <ul class="about-list">
+        <li><strong>Опыт:</strong> более 5 лет репетиторства и сопровождения школьников 7–11 классов.</li>
+        <li><strong>Образование:</strong> Московский технологический университет (МИРЭА) — по направлению «Биотехнические системы и технологии».</li>
+        <li><strong>Методы:</strong> (10).</li>
+        <li><strong>Отчётность для родителей:</strong> по договорённости — короткие отчёты о прогрессе и зонах внимания.</li>
+      </ul>
+
+      <div class="about-diploma">
+        <img
+          src="/images/diploma-preview.svg"
+          width="320"
+          height="220"
+          alt="Диплом об образовании — превью"
+        />
+        <div>
+          <p class="about-prose">
+            Диплом и документы об образовании можно посмотреть при знакомстве или по запросу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 4: методика -->
+    <section class="about-card" aria-labelledby="about-method-title">
+      <h2 class="about-section__title" id="about-method-title">Методика обучения</h2>
+      <p class="about-prose">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (11)
+      </p>
+      <p class="about-prose">
+        бббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббб (12)
+      </p>
+      <p class="about-prose">
+        и дым Отечества нам сладок и приятен (13)
+      </p>
+    </section>
+
+    <!-- СЕКЦИЯ 5: для кого -->
+    <section class="about-card" aria-labelledby="about-audience-title">
+      <h2 class="about-section__title" id="about-audience-title">Для кого подойдут занятия</h2>
+      <div class="about-blocks about-blocks--3">
+        <div class="about-block">
+          <strong>Школа 7–9 класс</strong>
+          Если нужно стабилизировать базу, подтянуть оценки и перестать бояться контрольных.
+        </div>
+        <div class="about-block">
+          <strong>ОГЭ</strong>
+          Если важно спокойно закрыть программу и уверенно войти в формат экзамена.
+        </div>
+        <div class="about-block">
+          <strong>ЕГЭ</strong>
+          Если цель — подготовка по профилю математики на высокий балл.
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 6: финальный CTA -->
+    <section class="about-card about-final" aria-labelledby="about-final-title">
+      <h2 class="about-section__title" id="about-final-title">Готовы познакомиться?</h2>
+      <p class="about-prose">
+        Напишите удобным способом — обсудим класс, предмет и цель. Пробное занятие поможет
+        понять, комфортно ли нам работать вместе.
+      </p>
+      <a class="btn btn--primary" href="/contact">Записаться на пробное занятие</a>
+    </section>
+  </div>
+</BaseLayout>

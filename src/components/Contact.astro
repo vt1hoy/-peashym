@@ -1,0 +1,34 @@
+---
+/*
+  Contact.astro — контакты (страница /contact).
+  Замените ссылки на свои реальные Telegram и WhatsApp.
+*/
+const telegramUrl = "https://t.me/peashym";
+const whatsappUrl = "https://max.ru/79088809871";
+---
+
+<section class="section section--soft section--last" id="contact" aria-labelledby="contact-title">
+  <h1 class="section__title section__title--page" id="contact-title">Связаться</h1>
+  <p class="section__lead">
+    Напишите класс, предмет и то, что сейчас больше всего беспокоит — отвечу и
+    предложу удобное время, если захотите познакомиться на пробном занятии.
+  </p>
+
+  <div class="contact-panel contact-panel--gentle">
+    <div>
+      <p>
+        <strong>Telegram:</strong>
+        <a href={telegramUrl}>открыть чат</a>
+      </p>
+      <p>
+        <strong>MAX:</strong>
+        <a href={whatsappUrl}>написать в Max</a>
+      </p>
+      <p class="contact-panel__hint">
+        
+    </div>
+    <div class="contact-links">
+      <a class="btn btn--primary" href={telegramUrl}>Написать в Telegram</a>
+    </div>
+  </div>
+</section>

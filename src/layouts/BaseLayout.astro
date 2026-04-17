@@ -1,0 +1,39 @@
+---
+/*
+  BaseLayout.astro — общая оболочка для всех страниц:
+  одинаковые head, шапка, подвал и подключение global.css.
+*/
+import "../styles/global.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Репетитор по математике и физике для школьников: спокойная подготовка к ОГЭ и ЕГЭ.",
+} = Astro.props;
+
+const path = Astro.url.pathname;
+---
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <SiteHeader currentPath={path} />
+    <main class="site-main">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

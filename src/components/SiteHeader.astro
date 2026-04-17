@@ -1,0 +1,30 @@
+---
+/*
+  SiteHeader.astro — навигация по сайту (несколько страниц).
+  currentPath приходит из BaseLayout, чтобы подсветить текущий пункт.
+*/
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = "/" } = Astro.props;
+
+function navClass(href: string) {
+  const isHome = href === "/" && (currentPath === "/" || currentPath === "");
+  const isMatch = href !== "/" && currentPath.startsWith(href);
+  return ["site-nav__link", (isHome || isMatch) && "is-active"].filter(Boolean).join(" ");
+}
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="/">Математика</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a class={navClass("/")} href="/">Главная</a>
+      <a class={navClass("/about")} href="/about">Обо мне</a>
+      <a class={navClass("/formats")} href="/formats">Форматы</a>
+      <a class={navClass("/reviews")} href="/reviews">Отзывы</a>
+      <a class={navClass("/contact")} href="/contact">Контакты</a>
+    </nav>
+  </div>
+</header>

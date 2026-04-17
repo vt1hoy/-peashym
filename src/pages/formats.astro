@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Форматы занятий — репетитор по математике и физике"
+  description="Курс, индивидуальные и мини-группы — выберите формат подготовки к экзаменам."
+>
+  <div class="formats-page">
+    <h1 class="formats-page__title">Форматы занятий</h1>
+
+    <div class="card-grid card-grid--3">
+      <article class="card card--featured">
+        <h3>Курс</h3>
+        <p>Системная подготовка по программе: темы идут последовательно, без «дыр».</p>
+        <p><strong>Выгоднее по цене</strong>, чем разовые занятия без плана.</p>
+        <ul class="about-list">
+          <li>фиксированная программа</li>
+          <li>регулярные занятия</li>
+          <li>лучший вариант для подготовки к экзаменам</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Индивидуальные занятия</h3>
+        <ul class="about-list">
+          <li>гибкое время</li>
+          <li>цена: <em>уточняется при записи</em></li>
+          <li>
+            подходит:
+            <ul>
+              <li>если есть сильные пробелы</li>
+              <li>если нужен быстрый результат</li>
+              <li>если нужен личный темп</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Мини-группы</h3>
+        <ul class="about-list">
+          <li>3–5 человек</li>
+          <li>цена: <em>уточняется при записи</em></li>
+          <li>
+            подходит:
+            <ul>
+              <li>если важна мотивация</li>
+              <li>если комфортно заниматься с другими</li>
+              <li>если хочется дешевле, чем индивидуально</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</BaseLayout>

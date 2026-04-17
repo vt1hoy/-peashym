@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+/* Замените на ссылку на ваш профиль на Profi.ru */
+const profiUrl = "https://profi.ru/profile/PeshkovMD2/?ysclid=mo386cq8fv793761864";
+---
+
+<BaseLayout
+  title="Отзывы — репетитор по математике и физике"
+  description="Отзывы на Profi.ru и короткие отзывы родителей и учеников."
+>
+  <div class="reviews-page">
+    <h1 class="reviews-page__title">Отзывы</h1>
+
+    <article class="card reviews-page__proof">
+      <p>Основные отзывы представлены на Profi.ru</p>
+      <a class="btn btn--primary" href={profiUrl}>Смотреть на Profi.ru</a>
+    </article>
+
+    <div class="card-grid card-grid--3 reviews-page__cards">
+      <article class="card review">
+        <p class="review__text">«За 2 месяца с нуля изучил физику для экзамена в колледже, лучший репетитор на этом сайте.»</p>
+        <p class="review__meta">Кирилл, 9 класс</p>
+      </article>
+
+      <article class="card review">
+        <p class="review__text">«Михаил замечательный репетитор! Подготовил дочь к ОГЭ! Написала на 4!! С ним легко и комфортно было дочке общаться! Очень доступно всё объяснял. Однозначно рекомендую! Михаил, спасибо вам большое.»</p>
+        <p class="review__meta">Ольга, мама ученицы 9 класса</p>
+      </article>
+
+      <article class="card review">
+        <p class="review__text">«Михаил Дмитриевич очень ответственно относится к работе.Сыну нравится его подача информации.Спасибо!»</p>
+        <p class="review__meta">Ася, мама ученика 11 класса</p>
+      </article>
+    </div>
+  </div>
+</BaseLayout>

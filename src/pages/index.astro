@@ -1,0 +1,19 @@
+---
+/*
+  Главная страница — мягкая «витрина» для родителей.
+  Главная — доверие и спокойствие; подробности на отдельных страницах.
+*/
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import AboutPreview from "../components/AboutPreview.astro";
+import ReviewsPreview from "../components/ReviewsPreview.astro";
+---
+
+<BaseLayout
+  title="Репетитор по математике и физике"
+  description="Спокойная подготовка к ОГЭ и ЕГЭ для школьников — без лишнего давления."
+>
+  <Hero />
+  <AboutPreview />
+  <ReviewsPreview />
+</BaseLayout>
