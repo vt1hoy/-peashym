@@ -117,15 +117,18 @@ img {
 
 @media (max-width: 768px) {
   .site-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
-    min-width: 0;
   }
 
   .site-nav__link {
-    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .site-logo {
+    display: none;
   }
 
   .hero {
